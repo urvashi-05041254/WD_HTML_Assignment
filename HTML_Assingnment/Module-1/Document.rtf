@@ -1,0 +1,237 @@
+{\rtf1\ansi\ansicpg1252\deff0\nouicompat\deflang1033{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\colortbl ;\red0\green0\blue255;}
+{\*\generator Riched20 10.0.22621}\viewkind4\uc1 
+\pard\sa200\sl276\slmult1\f0\fs32\lang9 Que:1 Are the HTML tags and elements the same thing?\fs22\par
+\fs28 Ans: In HTML, tags and elements are related but not exactly the same thing:\par
+1. Tags:- Tags are used to define elements within an HTML document. They consist of angle brackets (< >) surrounding a tag name.\par
+2. Elements:- Elements are made up of tags, content, and optionally attributes. An HTML element consists of a start tag, content, and an end tag.\par
+\par
+\fs32 Que:2 What are tags and attributes in HTML?\par
+\fs28 Ans: 1. HTML Tags:\par
+-Tags are keywords enclosed in angle brackets (< and >).\par
+-They define the structure and appearance of content on a webpage.\par
+-Tags can be opening (<>) or self-closing (</>) to create elements.\par
+-Examples include <p>, <a>, <div>, <img>, etc.\par
+2. HTML Attributes:\par
+-Attributes provide additional information about an element.\par
+-They are placed within the opening tag of an element.\par
+-Attributes are always written as name-value pairs, where the name is followed by an equal sign (=) and a value enclosed in quotes (").\par
+\par
+\fs32 Que:3 What are void elements in HTML?\par
+\fs28 Ans: In HTML, void elements are elements that do not have any content or end tag. \par
+-They are defined with just a start tag and are terminated by a slash (/) immediately before the closing angle bracket (>). \par
+-Void elements can optionally contain attributes, but they cannot contain any content or other elements.\par
+-As an example,\par
+1.<img>\par
+2.<input>\par
+3.<br>\par
+4.<meta>\par
+5.<link>\par
+\par
+\fs32 Que:4 What is HTML Entities?\par
+\fs28 Ans: HTML entities are special codes used to represent characters that have special meaning in HTML, or characters that cannot easily be typed or displayed. \par
+-They are primarily used to ensure that text and symbols are correctly rendered by web browsers.\par
+-For example, the less-than sign < is represented as '&lt;' and the greater-than sign > is represented as '&gt;'. \par
+- Entities can also be represented by a numeric code prefixed with &# or &#x.\fs32\par
+\par
+Que:5 What are different types of lists in HTML?\par
+\fs28 Ans: There are three types of lists in HTML.\par
+1. Ordered Lists (<ol>):\par
+-Ordered lists are used to present items in a numbered sequence.\par
+-Each item in the list is wrapped in <li> tags.\par
+2. Unordered Lists (<ul>):\par
+-Unordered lists are used to present items in a bulleted list.\par
+-Each item in the list is also wrapped in <li> tags.\par
+3.Definition Lists (<dl>):\par
+-Definition lists are used to present terms and their corresponding definitions.\par
+-Each term (<dt> for "definition term") is followed by its definition (<dd> for "definition description").\par
+\par
+\fs32 Que:6 What is the 'class' attribute in HTML?\par
+\fs28 Ans: In HTML, the class attribute is used to specify one or more classes for an HTML element.\par
+ -Classes are used to apply styles and behaviors to elements via CSS or JavaScript.\par
+- Example:\par
+<div class="container main-content">\par
+    <p class="intro">Hello, world!</p>\par
+</div>\fs32\par
+\par
+Que:7 What is the difference between the 'id' attribute and the 'class' attribute of HTML elements?\par
+\fs28 Ans: \par
+1. ID Attribute:\par
+-Purpose: The id attribute is used to uniquely identify an element within an HTML document.\par
+-Uniqueness: Each id value must be unique within the HTML document. No two elements can share the same id attribute value.\par
+-Usage: Typically used to identify a specific element for styling purposes or for JavaScript to manipulate specific elements.\par
+2. Class Attribute:\par
+- Purpose: The class attribute is used to specify one or more class names for an element.\par
+- Multiplicity: Multiple elements can share the same class attribute value.\par
+- Usage: Classes are primarily used to apply styles and behaviors to multiple elements across the HTML document.\fs32\par
+\par
+Que:8 What are the various formatting tags in HTML?\par
+\fs28 Ans: In HTML, formatting tags are used to structure and present content on web pages.\par
+1.Paragraph: <p> - Defines a paragraph of text.\par
+2.Heading: <h1> to <h6> - Defines headings of different levels (from largest <h1> to smallest <h6>).\par
+3.Bold: <b> or <strong> - Makes text bold.\par
+4.Italic: <i> or <em> - Makes text italicized.\par
+5.Underline: <u> - Underlines text.\par
+6.Strikethrough: <s> or <strike> or <del> - Strikes through text.\par
+7.Superscript: <sup> - Defines superscript text.\par
+8.Subscript: <sub> - Defines subscript text.\fs32\par
+\par
+Que:9 How is cell padding different from cell spacing?\par
+\fs28 Ans: \par
+1.Cell Padding:\par
+- Cell padding specifies the space between the content of a cell and its borders.\par
+-It is defined using the cellpadding attribute on the <table> tag or can be set via CSS.\par
+-Cell padding controls the space inside each cell, between the cell's content and its borders. It essentially adds space within the cell boundaries.\par
+2.Cell Spacing:\par
+-Cell spacing specifies the space between cells within the same table.\par
+- It is defined using the cellspacing attribute on the <table> tag or can be set via CSS.\par
+- Cell spacing controls the space between adjacent cells in the table. It sets the distance between the borders of adjacent cells, creating a gap between them.\fs32\par
+\par
+Que:10 How can we club two or more rows or columns into a single row or column in an HTML table?\par
+\fs28 Ans:  In HTML tables, we can merge two or more adjacent rows or columns into a single row or column using the rowspan and colspan attributes, respectively. \par
+1. 'rowspan':\par
+-To merge rows, use the rowspan attribute within a <td> (table data) or <th> (table header) element.\par
+<table border="1">\par
+  <tr>\par
+    <td rowspan="2">Row 1, Column 1</td>\par
+    <td>Row 1, Column 2</td>\par
+    <td>Row 1, Column 3</td>\par
+  </tr>\par
+  <tr>\par
+    <!-- Row 2, Column 1 is already occupied by Row 1, Column 1 -->\par
+    <td>Row 2, Column 2</td>\par
+    <td>Row 2, Column 3</td>\par
+  </tr>\par
+</table>\par
+2. 'colspan'\par
+-To merge columns, use the colspan attribute within a <td> or <th> element. \par
+<table border="1">\par
+  <tr>\par
+    <td>Row 1, Column 1</td>\par
+    <td colspan="2">Row 1, Column 2 and 3</td>\par
+    <td>Row 1, Column 4</td>\par
+  </tr>\par
+  <tr>\par
+    <td>Row 2, Column 1</td>\par
+    <td>Row 2, Column 2</td>\par
+    <td>Row 2, Column 3</td>\par
+    <td>Row 2, Column 4</td>\par
+  </tr>\par
+</table>\fs32\par
+\par
+Que:11 What is the difference between a block-level element and an inline element?\par
+\fs28 Ans: \par
+1. Block-level Elements:\par
+- Block-level elements typically start on a new line and take up the full width available.\par
+- They stack vertically, one after another, by default.\par
+-Examples:\par
+<div>\par
+<p>\par
+<h1> to <h6>\par
+2.Inline Elements:\par
+- Inline elements do not start on a new line and only take up as much width as necessary.\par
+-They do not disrupt the flow of the content.\par
+-Examples:\par
+<span>\par
+<a>\par
+<strong>, <em>, <b>, <i>\fs32\par
+\par
+Que:12 How to create a Hyperlink in HTML?\par
+\fs28 Ans:  In HTML, hyperlinks (or simply links) are created using the <a> element.\par
+- Example:\par
+<a href="{{\field{\*\fldinst{HYPERLINK https://www.google.com }}{\fldrslt{https://www.google.com\ul0\cf0}}}}\f0\fs28 ">Google</a>\fs32\par
+\par
+Que:13 What is the use of an iframe tag?\par
+\fs28 Ans: \par
+1.Embedding External Content: You can embed content from another website by specifying the URL in the src attribute of the <iframe> tag. \par
+2.Creating Inline Frames: You can use an <iframe> to create a section of your webpage that acts like a separate browser window.\par
+3.Specifying Dimensions: You can control the dimensions (width and height) of the <iframe> using the width and height attributes.\par
+4.Fallback Content: You can provide fallback content that will be displayed in browsers that do not support <iframe> or if the content specified in the src attribute cannot be loaded.\fs32\par
+\par
+Que:14 What is the use of a span tag? Explain with example?\par
+\fs28 Ans:  The <span> tag in HTML is a generic inline container used to group and style inline-level elements. \par
+-It doesn't have any specific semantic meaning on its own but is rather used to apply styles or manipulate parts of a text or inline content.\par
+1.Styling Text: You can apply CSS styles to a specific portion of text within a larger block of text.\par
+<p>This is a <span style="color: red; font-weight: bold;">highlighted</span> word.</p>\par
+2.Grouping Inline Elements: You can group multiple inline elements together for styling or scripting purposes.\par
+<p>My username is <span class="username">example123</span>.</p>\par
+\fs32\par
+DQue:15 How to insert a picture into a background image of a web page?\par
+\fs28 Ans:   To insert a picture into a background image of a web page using HTML we can use the <img> tag for the foreground image and the background attribute in the <body> tag for the background image.\par
+<!DOCTYPE html>\par
+<html lang="en">\par
+<head>\par
+    <meta charset="UTF-8">\par
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\par
+    <title>HTML Background Image Example</title>\par
+</head>\par
+<body background="background.jpg">\par
+    <img src="foreground.jpg" alt="Foreground Image">\par
+</body>\par
+</html>\fs32\par
+\par
+Que:16 How are active links different from normal links?\fs28\par
+Ans:  \par
+1.Normal Links :\par
+-A normal link is a simple line of code that contains a pointer to another resource (usually a web page).\par
+-When you create a link using the <a> tag in HTML, it appears as blue and underlined by default.\par
+-Users can click on normal links to navigate to the linked resource.\par
+2.Active Links:\par
+-An active link is a hyperlink that is currently being interacted with by the user.\par
+-When a user holds the mouse button on an active link or right-clicks on it, the link changes its color to red.\par
+-Active links indicate that the browser is in the process of loading a new resource.\fs32\par
+\par
+Que:17 What are the different tags to separate sections of text?\par
+\fs28 Ans:  \par
+1. <br> Tag:\par
+-The <br> tag is commonly used to create line breaks within a paragraph. It breaks the current line and moves the content to the next line.\par
+-Example:\par
+First line of text.<br>Second line of text\par
+2. <p> Tag:\\\par
+-The <p> tag defines a new paragraph. It separates text into distinct blocks, making it easier to structure content.\par
+-Example:\par
+<p>This is the first paragraph.</p>\par
+<p>This is the second paragraph.</p>\fs32\par
+\par
+Que:18 What is SVG?\par
+\fs28 Ans: SVG stands for Scalable Vector Graphics. \par
+-It is an XML-based vector image format for two-dimensional graphics with support for interactivity and animation. \par
+-SVG images can be scaled to different sizes without losing quality, making them ideal for use on the web, where they can be displayed at various resolutions and sizes. \par
+-They are widely used for icons, illustrations, charts, and other graphic elements on websites and in web applications.\fs32\par
+\par
+Que:19 What is difference between HTML and XHTML?\par
+\fs28 Ans: \par
+1.Syntax and Structure:\par
+-HTML is more lenient in its syntax, allowing for variations and inconsistencies.\par
+-XHTML, on the other hand, follows stricter rules based on XML standards. It demands adherence to a well-defined structure and syntax.\par
+2.XML-Based vs. SGML-Based:\par
+-HTML is based on SGML (Standard Generalized Markup Language).\par
+-XHTML is an XML (Extensible Markup Language)-based extension of HTML.\par
+3.Backward Compatibility:\par
+-HTML5 (the latest version of HTML) is designed to be backward compatible with older versions of HTML.\par
+-XHTML prioritizes adherence to XML rules, which may not be fully compatible with older web browsers.\par
+Multimedia Support:\par
+-HTML5 includes native support for multimedia elements like video and audio.\par
+-XHTML does not inherently provide such multimedia features.\fs32\par
+\par
+Que:20 What are logical and physical tags in HTML?\par
+\fs28 Ans:  \par
+1.Logical Tags:\par
+- These tags provide information about the content within them.\par
+- Examples:\par
+<abbr>: Defines an abbreviation.\par
+<acronym>: Defines an acronym.\par
+<address>: Represents an address element.\par
+<cite>: Indicates a citation.\par
+<code>: Represents computer code text.\par
+2.Physical Tags:\par
+- These tags control the visual formatting of text.\par
+- Examples:\par
+<b>: Renders bold text.\par
+<big>: Displays larger text.\par
+<i>: Represents italicized text.\par
+<small>: Renders smaller text\par
+
+\pard\sa200\sl276\slmult1\tx568\fs22\par
+}
+ 
